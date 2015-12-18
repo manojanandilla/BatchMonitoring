@@ -1,3 +1,26 @@
 .checkbox-inline label, .radio-inline label{
   font-weight: normal;
 }
+
+
+
+.navbar-inverse {
+    background-color: #12345;
+    border-color: #480808;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #DDD;
+    
+}
+
+.nav-tabs-center{
+    alignment-adjust:middle;
+}
