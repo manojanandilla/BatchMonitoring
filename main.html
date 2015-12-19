@@ -16,6 +16,7 @@
 <link
 	href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css"
 	rel="stylesheet" />
+<link href="css/woco-accordion.min.css" rel="stylesheet" />
 <link href="css/hello.css" rel="stylesheet" />
 <script src="js/jquery.min.js"></script>
 <script
@@ -23,7 +24,7 @@
 <!--<script src="js/jquery.steps.js"></script>-->
 <script
 	src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
-
+<script src="js/woco.accordion.min.js"></script>
 
 </head>
 <nav class="navbar navbar-inverse ">
@@ -38,18 +39,17 @@
 			data-toggle="dropdown" role="button" aria-haspopup="true"
 			aria-expanded="false"><b>USER</b></a>
 			<ul class="dropdown-menu">
+				<li><a href="#">Profile</a></li>
 				<li><a href="#">Log off</a></li>
-
 			</ul></li>
-
 	</ul>
 
 </nav>
 <div class="content">
 	<div class="">
-	<div class="nav-tabs-center">
-		<ul id="myTabs" class="nav nav-tabs" role="tablist">
-			<li role="presentation"><a href="#thome" id="thome-tab"
+		<div class="nav-tabs-center">
+			<ul id="myTabs" class="nav nav-tabs" role="tablist">
+				<li role="presentation"><a href="#thome" id="thome-tab"
 					role="tab" data-toggle="tab">HOME</a></li>
 				<li role="presentation"><a href="#tone" id="tone-tab"
 					role="tab" data-toggle="tab">HOME JOBS</a></li>
@@ -57,8 +57,10 @@
 					id="ttwo-tab" data-toggle="tab">FELIXS</a></li>
 				<li role="presentation"><a href="#tthree" role="tab"
 					id="tthree-tab" data-toggle="tab">CRD JOB</a></li>
-		</ul>
-	</div>
+				<li role="presentation" style="float:right;"><a href="#refresh" role="tab"
+					id="refresh-tab">Refresh</a></li>
+			</ul>
+		</div>
 
 		<body>
 
@@ -67,40 +69,122 @@
 				<div role="tabpanel" class="tab-pane fade  active in" id="thome"
 					aria-labelledby="thome-tab">
 
-					<div class="panel panel-default">
-						<!-- Default panel contents -->
-						<div class="panel-heading">Panel heading</div>
 
-						<!-- Table -->
-						<table class="table">
-							<thead>
-								<tr>
-									<th>Jobs</th>
-									<th>Status</th>
+					<div class="accordion">
+						<h1>Section 1</h1>
+						<div>
+							<div class="panel panel-default">
+								<!-- Default panel contents -->
+								<div class="panel-heading">Panel One</div>
 
-								</tr>
-							</thead>
-							<tbody>
+								<!-- Table -->
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Jobs</th>
+											<th>Status</th>
 
-								<tr class="active">
-									<td>CRD Communication jobs</td>
-									<td>Active</td>
+										</tr>
+									</thead>
+									<tbody>
 
-								</tr>
-								<tr class="warning">
-									<td>ACB Jobs</td>
-									<td>Warning</td>
+										<tr class="active">
+											<td>CRD Communication jobs</td>
+											<td>Active</td>
 
-								</tr>
-								<tr class="danger">
-									<td>XYZ Jobs</td>
-									<td>Danger</td>
+										</tr>
+										<tr class="warning">
+											<td>ACB Jobs</td>
+											<td>Warning</td>
 
-								</tr>
-							</tbody>
+										</tr>
+										<tr class="danger">
+											<td>XYZ Jobs</td>
+											<td>Danger</td>
 
-						</table>
+										</tr>
+									</tbody>
+
+								</table>
+							</div>
+						</div>
+						<h1>Section 2</h1>
+						<div>
+							<div class="panel panel-default">
+								<!-- Default panel contents -->
+								<div class="panel-heading">Panel Two</div>
+
+								<!-- Table -->
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Jobs</th>
+											<th>Status</th>
+
+										</tr>
+									</thead>
+									<tbody>
+
+										<tr class="active">
+											<td>CRD Communication jobs</td>
+											<td>Active</td>
+
+										</tr>
+										<tr class="warning">
+											<td>ACB Jobs</td>
+											<td>Warning</td>
+
+										</tr>
+										<tr class="danger">
+											<td>XYZ Jobs</td>
+											<td>Danger</td>
+
+										</tr>
+									</tbody>
+
+								</table>
+							</div>
+						</div>
+						<h1>Section 3</h1>
+						<div>
+							<div class="panel panel-default">
+								<!-- Default panel contents -->
+								<div class="panel-heading">Panel Three</div>
+
+								<!-- Table -->
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Jobs</th>
+											<th>Status</th>
+
+										</tr>
+									</thead>
+									<tbody>
+
+										<tr class="active">
+											<td>CRD Communication jobs</td>
+											<td>Active</td>
+
+										</tr>
+										<tr class="warning">
+											<td>ACB Jobs</td>
+											<td>Warning</td>
+
+										</tr>
+										<tr class="danger">
+											<td>XYZ Jobs</td>
+											<td>Danger</td>
+
+										</tr>
+									</tbody>
+
+								</table>
+							</div>
+						</div>
 					</div>
+
+
 
 				</div>
 				<div role="tabpanel" class="tab-pane fade" id="tone"
